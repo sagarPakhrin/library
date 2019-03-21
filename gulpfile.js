@@ -41,6 +41,7 @@ function css() {
 
 function watchFiles() {
   gulp.watch("./scss/**/*", css);
+  gulp.watch("./**/*.css", browserSyncReload);
   gulp.watch("./**/*.html", browserSyncReload);
   gulp.watch("./**/*.js", browserSyncReload);
 }
