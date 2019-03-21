@@ -21,6 +21,12 @@ function browserSync(done) {
   done();
 }
 
+function servePopper(){
+		return gulp.src(['node_modules/popper.js/dist/popper.js'])
+		.pipe(gulp.dest('js'))
+		.pipe(browsersync.stream());
+}
+
 // BrowserSync Reload
 function browserSyncReload(done) {
   browsersync.reload();
@@ -48,7 +54,7 @@ function watchFiles() {
 
 
 // define complex tasks
-const build = gulp.parallel(css);
+const build = gulp.parallel(css, servePopper);
 const watch = gulp.parallel(watchFiles, browserSync);
 
 
