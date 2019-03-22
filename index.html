@@ -13,6 +13,65 @@
 				<title>Book Store</title>
 		</head>
 		<body>
+
+				<!-- navigation -->
+				<nav class="navigation">
+						<button type="button" class="navbar-toggler hamburger-menu" data-toggle="collapse" data-target="#myNavbar">
+								<div class="line1"></div>
+								<div class="line2"></div>
+								<div class="line3"></div>
+						</button>
+						<div class="bg-cover"> </div>
+
+						<div class="collapse nav-content"  id="myNavbar">
+								<div class="container-fluid">
+										<div class="row">
+												<div class="col-10 mx-auto">
+														<a class="navbar-brand" href="#">
+																<img src="img/book.png" class="mt-4 d-lg-none d-block" width="120" alt="">
+														</a>
+														
+														<ul class="navbar-nav text-capitalize flex-lg-row  flex-column nav-justified">
+																<li class="nav-item"> <a class="nav-link m-lg-3 m-1 link-item" href="#">Home</a> </li>
+																<li class="nav-item"> <a class="nav-link m-lg-3 m-1 link-item" href="#">About us</a> </li>
+																<li class="nav-item"> <a class="nav-link m-lg-3 m-1 link-item" href="#">Library</a> </li>
+																<li class="nav-item"> <a class="nav-link m-lg-3 m-1 link-item" href="#">Deals</a> </li>
+																<li class="nav-item"> <a class="nav-link m-lg-3 m-1 link-item" href="#">Reviews</a> </li>
+																<li class="nav-item"> <a class="nav-link m-lg-3 m-1 link-item" href="#">Content</a> </li>
+														</ul>
+												</div>
+												<div class="col-lg-5 col-10 mx-auto">
+														<form class="mt-3">
+																<div class="input-group">
+																		<input class="form-control" placeholder="Search">
+																		<div class="input-group-append">
+																				<button type="button" class="btn btn-light">
+																						<i class="fas fa-search"></i>
+																				</button>
+																		</div>
+																</div>
+														</form>
+												</div>
+										</div>
+										<div class="row my-5">
+												<div class="col text-center">
+														<h1 class="display-1 text-white">Your Change</h1>
+														<h3 class="text-capitalize text-light">Get each book for $9.99</h3>
+												</div>
+										</div>
+										<div class="row d-lg-block d-none">
+												<div class="col text-center">
+														<img src="img/book.png" alt="Book" width="550"></div>
+										</div>
+								</div>
+						</div>
+
+				</nav>
+				<!-- end of navigation -->
+
+
+
+
 				<!-- header -->
 				<header class="d-flex align-items-center ">
 						<div class="align-self-start position-absolute">
@@ -361,11 +420,74 @@
 														</div>
 												</div>
 										</div>
-										<div class="col-xl-5 col-md-8 col-10">
+										<div class="col-xl-5 col-md-8 col-10 mx-auto">
+												<h1 class="text-light font-weight-light text-center mb-5">Stay connected</h1>
+												<form class="contact-form" method="post">
+														<div class="form-group">
+																<input class="text form-control py-2 mb-2" type="text" name="" placeholder="Name" value="">
+																<input class="text form-control py-2 mb-2" type="email" name=""
+																																				placeholder="Email" value="">
+																<textarea class="form-control mb-3" placeholder="Message" rows="3" ></textarea>
+																<input class="form-control text btn btn-outline-danger" type="submit"
+																																				name="submit" value="submit">
+
+														</div>
+												</form>
 										</div>
 								</div>
 						</div>
 				</section>
+
+
+				<!-- footer  -->
+				<footer class="bg-dark">
+						<div class="container">
+								<div class="row bp-3">
+										<div class="col-12 p-4 text-center text-light">
+												<h1>Become our member</h1>
+										</div>
+										<div class="col-sm-12 col-12 m-auto">
+												<form class="form-inline border rounded mb-3 p-5" action="" method="post">
+														<input type="email" placeholder="Email" class="form-control w-50 m-auto">
+														<a class="btn btn-outline-danger w-25 " href="">Sign Up</a>
+												</form>
+										</div>
+								</div>
+								<div class="row">
+										<div class="col text-center">
+												<div class="mb-2">
+														<a href=""> <i class="mx-sm-4 mx-2 fab fa-facebook text-primary fa-2x"></i> </a>
+														<a href=""> <i class="mx-sm-4 mx-2 fab fa-twitter text-info fa-2x"></i> </a>
+														<a href=""> <i class="mx-sm-4 mx-2 fab fa-instagram text-danger fa-2x"></i> </a>
+														<a href=""> <i class="mx-sm-4 mx-2 fab fa-linkedin text-info fa-2x"></i> </a>
+												</div>
+										</div>
+								</div>
+						</div>
+						<div class="container-fluid p-3">
+								<div class="row">
+										<div class="col mb-4">
+												<ul class="nav justify-content-center nav-tabs">
+														<li class="nav-item"> <a href=""class="nav-link text-light">Hope</a> </li>
+														<li class="nav-item"> <a href=""class="nav-link text-light">About us</a> </li>
+														<li class="nav-item"> <a href=""class="nav-link text-light">Library</a> </li>
+														<li class="nav-item"> <a href=""class="nav-link text-light">Deals</a> </li>
+														<li class="nav-item"> <a href=""class="nav-link text-light">Reviews</a> </li>
+														<li class="nav-item"> <a href=""class="nav-link text-light">Contact</a> </li>
+												</ul>
+										</div>
+								</div>
+								<div class="row">
+										<div class="col text-light text-center">
+												<p>&copy; Copyright 2019. Developer Sagar Lama</p>
+										</div>
+								</div>
+						</div>
+				</footer>
+				<!-- end of footer -->
+
+
+
 
 
 				<!-- end of contact -->

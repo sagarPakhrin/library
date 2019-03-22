@@ -3,6 +3,11 @@ $(document).ready(function(){
 				'wrapAround': true
 		});
 
+		$('.hamburger-menu').click(function(){
+				$('.navigation').toggleClass('change');
+		})
+
+
 		$(window).scroll(function(){
 				let position = $(this).scrollTop();
 				// console.log(position);
