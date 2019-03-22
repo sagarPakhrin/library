@@ -23,8 +23,8 @@ function browserSync(done) {
 
 function servePopper(){
 		return gulp.src(['node_modules/popper.js/dist/popper.js'])
-		.pipe(gulp.dest('js'))
-		.pipe(browsersync.stream());
+		.pipe(gulp.dest('js'));
+		// .pipe(browsersync.stream());
 }
 
 // BrowserSync Reload
@@ -54,12 +54,13 @@ function watchFiles() {
 
 
 // define complex tasks
-const build = gulp.parallel(css, servePopper);
+const build = gulp.parallel(css);
 const watch = gulp.parallel(watchFiles, browserSync);
 
 
 watch(SCSS_SRC,css,browserSyncReload,watchFiles)
 // export tasks
+exports.popper = servePopper;
 exports.css = css;
 exports.build = build;
 exports.watch = watch;

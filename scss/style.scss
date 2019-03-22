@@ -133,3 +133,116 @@ header {
 		transform:rotate(-38deg);
 }
 /* end of suggested books */
+
+/* popular books */
+.popular-books {
+		position:relative;
+}
+
+.video-container {
+		position:absolute;
+		top:0;
+		left:0;
+		height:100%;
+		width:100%;
+		z-index:-1;
+		opacity:.4;
+}
+
+.bg-video {
+		object-fit:cover;
+		height:100%;
+		width:100%;
+}
+
+.book-card{
+		position:relative;
+		box-shadow:5px 15px 50px #aaa;
+		max-width:420px;
+		transition:all .8s;
+		overflow:hidden;
+}
+
+.rotate {
+		perspective:100rem;
+}
+.back{
+		position:absolute;
+		top:-100%;
+		opacity:0;
+		background:#fefefe;
+		height:100%;
+		width:100%;
+		user-select:none;
+		pointer-events:none;
+		transform:rotateY(180deg);
+		transition:top .8s, opacity .4s;
+}
+
+.back-content{
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform:translate(-50%, -50%);
+}
+
+.rotate:hover .book-card{
+		transform:rotateY(180deg);
+}
+.rotate:hover .back{
+		top:0;
+		opacity:1;
+		user-select:auto;
+		pointer-events:auto;
+}
+/* end of popular books */
+
+
+/* contact */
+.contact {
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .9)), url(../img/header-bg.jpeg) fixed center no-repeat /cover;
+}
+
+.items-wrapper {
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .6)), url(../img/items-wrapper-bg.jpg) center no-repeat /cover;
+    border-radius: 5px;
+}
+
+.floating-item {
+    background: rgba(0, 0, 0, .65);
+    border-radius: 5px;
+}
+
+.first-item {
+    animation: float 15s infinite;
+}
+
+.second-item {
+    animation: float 20s ease-in infinite;
+}
+
+.third-item {
+    animation: float 40s linear infinite;
+}
+
+.fourth-item {
+    animation: float 30s infinite;
+}
+
+.fifth-item {
+    animation: float 25s ease-in-out infinite;
+}
+
+@keyframes float{
+    0% {
+        transform: translateX(0);
+    }
+
+		50% {
+				transform: translateX(-60px);
+		}
+
+		100% {
+				transform: translateX(0);
+		}
+}
